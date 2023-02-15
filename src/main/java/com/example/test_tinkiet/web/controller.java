@@ -17,10 +17,6 @@ import java.io.IOException;
 @RestController
 public class controller {
     private static final String FILE_PATH = "candidates.json";
-    @GetMapping(path="/")
-    public String home(){
-        return "home";
-    }
 
     @PostMapping("/candidates")
     public ResponseEntity<String> createCandidate(@RequestBody Candidate candidate) {
